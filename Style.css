@@ -1,0 +1,416 @@
+/* 헤더 스타일 */
+header {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+header>div{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width : 130px; 
+    height : 130px;
+}
+#headerTitle    {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+.client {
+    position: absolute;
+    right: 220px;
+    vertical-align: bottom;
+}
+.client a{
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+/* 바디전체 여백 */
+body {
+    position: relative;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-bottom: 100px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+/* 의뢰서 작성 박스 */
+.reqBox {
+    width: 450px;
+    height: 680px;
+    padding: 30px 30px 10px;
+    margin: 0 auto;
+    background-color: #F0F7F0;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.reqBox tr>td {
+    text-align: right;
+    width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#detail{
+    vertical-align: top;
+}
+/* 입력칸 내부 텍스트 */
+.reqBox td {
+    text-align: center;
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* 입력칸 크기 및 모양 */
+.reqBox select,
+.reqBox input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    font-size: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border-style: hidden;
+}
+
+/* 제출버튼(submit) */
+#button {
+    width: 140px;
+    height: 40px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    border-style: hidden;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+#button:hover {
+    background-color: #45a049; /* 버튼 호버 색상 변경 */
+}
+/* 버튼(a태그) */
+.pageButton{
+    width: 140px;
+    height: 40px;
+    background-color: #4CAF50;
+    font-size: 15px;
+    text-decoration-line: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    border-style: none;
+    margin: 30px ;
+}
+
+.pageButton div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Height to fill the button container */
+    width: 100%; /* Width to fill the button container */
+}
+
+/* 의뢰서 작성하기 */
+#requestWrite {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 의뢰서 조회 */
+/* 내 의뢰서 박스 */
+.myReq {
+    width: 450px;
+    height: 680px;
+    padding: 30px 30px 10px;
+    background-color: #F0F7F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-bottom: 20px;
+}
+.myReq div {
+    margin: 10px auto;
+}
+
+#attImg{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
+    font-weight: bold;
+}
+#attImg img {
+    width: 27px;
+    height: 27px;
+}
+.myReq td {
+    width: 130px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 10px;
+    border-style: none;
+}
+.myReq table{
+    border-spacing: 20px;
+}
+
+/* 도착한 제안서 */
+.reProp {
+    width: 450px;
+    height: 680px;
+    padding: 30px 30px 10px;
+    background-color: #F0F7F0;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-bottom: 100px; 
+    text-align: center;
+}
+
+.reProp a {
+    color: black;
+    text-decoration-line: none;
+    font-size: 15px;
+}
+
+.reProp div {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+.reProp img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border-style: none;
+}
+#propSellerImg {
+    width: 120px;
+    text-align: center;
+}
+
+.reProp td {
+    text-align: left;
+}
+
+.reProp td hr {
+    width: 200px;
+    float: left;
+}
+/* clearfix 추가 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 완료페이지 */
+/* 가운데 정렬 */
+#cmpContent>div{
+    display: flex;
+    justify-content: center;
+}
+#cmpImg{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* 제안서조회 */
+.proposal-section {
+    background-color: #F0F7F0;
+    padding: 30px 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 680px;
+    float: right;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.proposal-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seller-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.seller-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.seller-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.proposal-content {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.proposal-img {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.proposal-text {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.proposal-content p {
+    margin: 10px 0;
+}
+
+.proposal-options {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.proposal-options div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.proposal-options div label {
+    display: flex;
+    align-items: center;
+}
+
+.proposal-options div label input {
+    margin-right: 10px;
+}
+
+.proposal-options div span {
+    font-weight: bold;
+}
+
+.final-price {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* 리뷰 페이지 */
+#reviewImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+/* 판매자 마이페이지 */
+.sellerMiniProfile{
+    width: 750px;
+    height: 200px;
+    background-color: #F0F7F0;
+    border-radius: 10px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sellerMiniProfile>div{
+    flex: 1;
+    margin: 20px;
+}
+.profileImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+#sellerInfo{
+    flex: 2;
+    text-align: center;
+}
+#sellerInfo div{
+    float: left;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+#updateButton{
+    float: right;
+
+}
+/* 제안내역 */
+.proposalBox{
+    width: 750px;
+    height: 200px;
+    background-color: #F0F7F0;
+    border-radius: 10px;
+    border-style: none;
+
+}
+.proposalStatus{
+    float: right;
+}
