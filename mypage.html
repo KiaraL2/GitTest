@@ -34,7 +34,9 @@
                 <img src="./꽃집3.jpg" alt="" class="profileImg">
             </div>
             <div id="sellerInfo">
-                <a href="profile.jsp">판매자 닉네임</a>
+                <div>
+                    <a href="profile.jsp">판매자 닉네임</a>
+                </div>
                 <div>
                     <span>판매자 등급 : </span><span>골드</span><img src="" alt="" id="tier">
                 </div>
@@ -42,8 +44,10 @@
                     <span>가입일자 : </span><span>2024.01.01</span>
                 </div>
             </div>
-            <div id="updateButton">
-                <a href="update.jsp" class="pageButton">개인정보수정</a>
+            <div>
+                <div class="pageButton" id="updateButton">
+                    <a href="update.jsp" >개인정보수정</a>
+                </div>
             </div>
         </div>
     </div>
@@ -54,64 +58,60 @@
 
             <div class="proposalBox">
                 <div class="proposalInfo">
-                    <p>의뢰 제목</p>
-                    <p>2024.05.23 20:07</p>
-                    <p>의뢰자 님</p>
-                </div>
-                <div>
-                    <span class="proposalStatus" id="proposalProgress">채택 대기중</span>
-                </div>
-                <div>
-                    <!-- <div>
-                        <a href="">수정</a>
-                        <a href="">삭제</a>
-                    </div> -->
-                    <div>
-                        <a href="requestShow.jsp" class="pageButton">의뢰현황</a>
+                    <div class="reqTitle">
+                        <h3>의뢰 제목</h3>
                     </div>
-
+                    <div>
+                        <span>2024.05.23 20:07</span>
+                    </div>
+                    <div>
+                        <span>의뢰자 님</span>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <div>
+                        <span class="proposalStatus" id="proposalProgress">채택 대기중</span>
+                    </div>
+                    <div class="pageButton">
+                        <a href="requestShow.jsp" >의뢰현황</a>
+                    </div>
                 </div>
             </div>
             <div class="proposalBox">
-                <div class="requestInfo">
-                    <p>의뢰 제목</p>
-                    <p>2024.05.23 20:07</p>
-                    <p>의뢰자 님</p>
+                <div class="proposalInfo">
+                    <div class="reqTitle">
+                        <h3>의뢰 제목</h3>
+                    </div>
+                    <div>
+                        <span>2024.05.23 20:07</span>
+                    </div>
+                    <div>
+                        <span>의뢰자 님</span>
+                    </div>
                 </div>
                 <div>
                     <span class="proposalStatus" id="proposalComlete">거래 완료</span>
-                </div>
-                <div>
-                    <!-- <div>
-                        <a href="">수정</a>
-                        <a href="">삭제</a>
-                    </div> -->
-                    <a href="requestShow.jsp" class="pageButton">
-                        <div>
+                    <div class="pageButton">
+                        <a href="requestShow.jsp" >
                             거래내역 보기
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="proposalBox">
-                <div class="requestInfo">
-                    <p>의뢰 제목</p>
-                    <p>2024.05.23 20:07</p>
-                    <p>의뢰자 님</p>
+                <div class="proposalInfo">
+                    <div class="reqTitle">
+                        <span>의뢰 제목</span>
+                    </div>
+                    <div>
+                        <span>2024.05.23 20:07</span>
+                    </div>
+                    <div>
+                        <span>의뢰자 님</span>
+                    </div>
                 </div>
                 <div>
                     <span class="proposalStatus" id="reqCancel">의뢰 취소</span>
-                </div>
-                <div>
-                    <!-- <div>
-                        <a href="">수정</a>
-                        <a href="">삭제</a>
-                    </div> -->
-                    <a href="requestShow.jsp" class="pageButton">
-                        <div>
-                            의뢰현황
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>

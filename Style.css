@@ -45,6 +45,11 @@ body {
 h1{
     text-align: center;
 }
+a{
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
 /* 의뢰서 작성 박스 */
 .reqBox {
     width: 450px;
@@ -110,15 +115,20 @@ textarea {
 .pageButton{
     width: 140px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #4CAF50;
     font-size: 15px;
-    text-decoration-line: none;
-    font-weight: bold;
-    color: white;
-    text-align: center;
     border-radius: 20px;
     border-style: none;
-    margin: 30px ;
+    margin: 0px auto;
+}
+.pageButton>a{
+    font-weight: bold;
+    color: white;
+    text-decoration-line: none;
+    
 }
 
 .pageButton div {
@@ -376,6 +386,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 .sellerMiniProfile>div{
     flex: 1;
@@ -391,26 +402,43 @@ textarea {
 }
 #sellerInfo{
     flex: 2;
-    text-align: center;
-}
-#sellerInfo div{
-    float: left;
-    padding-top: 10px;
-    margin: 0 auto;
+    text-align: left;
+    margin: 0px auto;
 }
 #updateButton{
-    float: right;
-
+    vertical-align: bottom;
 }
 /* 제안내역 */
 .proposalBox{
     width: 750px;
-    height: 200px;
     background-color: #F0F7F0;
     border-radius: 10px;
     border-style: none;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.proposalBox>div{
+    flex: 1;
+    padding-left: 30px ;
+}
+.proposalInfo {
+    flex: 2; /* 왼쪽 박스가 더 넓게 */
+}
 
+.rightBox {
+    flex: 1; /* 오른쪽 박스가 더 좁게 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .proposalStatus{
-    float: right;
+    font-weight: bold;
+}
+#proposalComlete{
+    color: #4CAF50;
+}
+#proposalProgress{
+    color: #AFAEAE;
 }
